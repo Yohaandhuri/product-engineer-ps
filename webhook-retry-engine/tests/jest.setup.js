@@ -1,0 +1,10 @@
+process.env.DB_PATH = ':memory:';
+process.env.WEBHOOK_URL = 'http://fake-webhook.test/receive';
+process.env.WEBHOOK_TIMEOUT_MS = '2000';
+process.env.BACKOFF_BASE_MS = '10';
+process.env.BACKOFF_MAX_MS = '50';
+process.env.MAX_ATTEMPTS = '3';
+process.env.PER_CLIENT_FETCH_LIMIT = '5';
+process.env.MAX_CLIENTS = '50';
+process.env.BATCH_SIZE = '20';
+process.env.POLL_INTERVAL_MS = '1000000'; 

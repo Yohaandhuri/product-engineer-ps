@@ -1,0 +1,30 @@
+{
+  "name": "webhook-retry-engine",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "receiver": "node test-receiver/receiver.js",
+    "test": "jest --runInBand",
+    "manual": "node manual-tests/run.js"
+  },
+  "jest": {
+  "setupFiles": ["<rootDir>/tests/jest.setup.js"],
+  "testEnvironment": "node"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "better-sqlite3": "^13.0.3",
+    "dotenv": "^18.0.1",
+    "express": "^5.2.1",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "jest": "^30.5.2",
+    "supertest": "^7.2.2"
+  }
+}
