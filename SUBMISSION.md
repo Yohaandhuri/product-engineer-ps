@@ -17,7 +17,7 @@ Prerequisites:
 Setup:
 ```
 npm install
-cp .env.example .env
+cp env.example .env
 ```
 
 Environment variables (set in `.env`, see `.env.example` for the full list, no secrets involved):
